@@ -15,6 +15,9 @@ type error = TupleToObject<[[1, 2], {}]>
 
 
 // ============= Your Code Here =============
+/**
+ * 1、T[number]：表示元组或数组的某一项
+ */
 type TupleToObject<T extends readonly any[]> = {
   [k in T[number]]: k;
 }

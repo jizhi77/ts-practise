@@ -16,7 +16,7 @@ type cases = [
 
 // ============= Your Code Here =============
 /**
- * 1、T extends readonly any[] 构造一个新的只读的 any[]类型
+ * 1、T extends readonly any[] 可以将类型约束为 readonly 的数组类型
  * 2、length 关键字可以读取元组或者数组的长度
  */
 type Length<T extends readonly any[]> = T['length']
